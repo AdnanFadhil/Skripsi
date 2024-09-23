@@ -12,9 +12,9 @@ indonesian_companies = pd.read_csv('indonesian_stock_data.csv')
   
 # Define a function to fetch historical data for a selected stock  
 def fetch_historical_data(ticker, period, interval):  
-   historical_data = pd.read_csv(f"{ticker}_{period}_{interval}.csv")  
-   return historical_data  
-  
+   df = pd.read_csv('indonesian_stock_data.csv')  
+   historical_data = df[df['Security Code'] == ticker]  
+   return historical_data
   
 # Define a function to generate stock predictions  
 def generate_stock_predictions(historical_data):  

@@ -47,24 +47,24 @@ indonesian_companies = [
     {'ticker': 'WIKA.JK', 'name': 'Wijaya Karya (Persero) Tbk'}
 ]
 
-stock_data_info = []
-
-for company in indonesian_companies:
-    ticker = company['ticker']
-    stock = yf.Ticker(ticker)
-    info = stock.info
-    stock_data_info.append({
-        'Security Code': ticker,
-        'Issuer Name': company['name'],
-        'Security Name': info['shortName'],
-        'Group': info['sector'],
-        'Face Value': info['currentPrice'],
-        'Industry': info['industry'],
-        'Sector Name': info['sector'],
-        'Industry New Name': info['industry'],
-        'Igroup Name': info['sector'],
-        'ISubgroup Name': info['industry']
-    })
-
-df = pd.DataFrame(stock_data_info)
+stock_data_info = []  
+  
+for company in indonesian_companies:  
+   ticker = company['ticker']  
+   stock = yf.Ticker(ticker)  
+   info = stock.info  
+   stock_data_info.append({  
+      'Security Code': ticker,  
+      'Issuer Name': company['name'],  
+      'Security Name': info['shortName'],  
+      'Group': info['sector'],  
+      'Face Value': info['currentPrice'],  
+      'Industry': info['industry'],  
+      'Sector Name': info['sector'],  
+      'Industry New Name': info['industry'],  
+      'Igroup Name': info['sector'],  
+      'ISubgroup Name': info['industry']  
+   })  
+  
+df = pd.DataFrame(stock_data_info)  
 df.to_csv('indonesian_stock_data.csv', index=False)
