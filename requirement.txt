@@ -1,0 +1,7 @@
+python==3.11.6  
+streamlit==1.38.0  
+plotly==5.24.1  
+pandas==2.1.3  
+keras==2.15.0  
+pywt==1.7.0  
+scikit-learn==1.5.2
