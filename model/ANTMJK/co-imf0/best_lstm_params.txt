@@ -1,0 +1,11 @@
+num_layers: 1
+units: 198
+dropout: 0.268060285924601
+bidirectional: False
+model_type: CNN-LSTM
+loss_fn: huber
+optimizer: adam
+lr: 0.001544693920132746
+batch_size: 16
+epochs: 43
+layer_config: ['layer1(LSTM,198), drop1(0.27)']

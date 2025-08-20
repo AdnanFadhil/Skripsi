@@ -1,0 +1,11 @@
+num_layers: 3
+units: 172
+dropout: 0.19012778505938063
+bidirectional: False
+model_type: GRU
+loss_fn: huber
+optimizer: adam
+lr: 0.005430498691498274
+batch_size: 64
+epochs: 33
+layer_config: ['layer1(GRU,172), drop1(0.19)', 'layer2(GRU,86), drop2(0.19)', 'layer3(GRU,43), drop3(0.19)']

@@ -1,0 +1,11 @@
+num_layers: 1
+units: 95
+dropout: 0.15138226938731153
+bidirectional: True
+model_type: GRU
+loss_fn: huber
+optimizer: nadam
+lr: 0.004282078833346762
+batch_size: 16
+epochs: 74
+layer_config: ['layer1(Bi-GRU,95), drop1(0.15)']
